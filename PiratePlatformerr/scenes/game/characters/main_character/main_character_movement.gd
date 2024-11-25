@@ -50,6 +50,7 @@ var _hit_sound = preload("res://assets/sounds/slash.mp3")
 # Función de inicialización
 func _ready():
 	_max_jumps =JumpGlobal.jump
+	Global.deadmensaje= false
 	main_animation.play(_current_movement)
 	# Si no hay un personaje, deshabilitamos la función: _physics_process
 	if not character:
@@ -208,6 +209,7 @@ func _on_animation_animation_finished():
 		# Validamos si el sonido ya esta sonando
 		if _is_playing != "_dead_sound":
 			_is_playing = "_dead_sound"
+			Global.deadmensaje= true
 			# Reproducimos el sonido
 			_play_sound(_dead_sound)
 	elif main_animation.get_animation() == _movements.ATTACK:

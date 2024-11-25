@@ -16,8 +16,27 @@ func _ready():
 	_area_next_level.body_entered.connect(_load_nex_level)
 
 
+func _process(delta):
+	mensaje()
+
+
 # Cargamos el siguiente nivel (la siguiente escena)
 func _load_nex_level(body):
 	if body.is_in_group("player"):
 		var scene = "res://scenes/game/levels/rooms/scene_2/scene_2.tscn"
 		#SceneTransition.change_scene(scene) # Por el momento no usaremos este cambio de nivel
+
+func mensaje():
+	if Global.mensaje:
+		$anounce.show()
+	else:
+		$anounce.hide()
+
+func _on_area_2d_body_entered(body):
+	if body.is_in_group("player"):
+		Global.mensaje= true
+
+
+func _on_area_2d_2_body_entered(body):
+	if body.is_in_group("player"):
+		Global.mensaje= false

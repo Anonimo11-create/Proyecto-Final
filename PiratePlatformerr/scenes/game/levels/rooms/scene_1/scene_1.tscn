@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://dhor7t5klwdwx"]
+[gd_scene load_steps=28 format=3 uid="uid://dhor7t5klwdwx"]
 
 [ext_resource type="TileSet" uid="uid://bx1rsqucrwm2i" path="res://assets/resources/bg_tile_set.tres" id="1_0t8t3"]
 [ext_resource type="PackedScene" uid="uid://8rbt5lmdrp0s" path="res://scenes/game/camera/camera.tscn" id="1_8l71v"]
@@ -27,6 +27,12 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3x710"]
 size = Vector2(31, 21)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4e54g"]
+size = Vector2(258, 406)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wgak8"]
+size = Vector2(34, 427.5)
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_j3e3j")
@@ -244,3 +250,30 @@ character = NodePath("../MainCharacter")
 [node name="PowerUp" parent="." instance=ExtResource("22_vr6n4")]
 position = Vector2(195, 436)
 animation = &"green_bottle"
+
+[node name="anounce" type="Label" parent="."]
+visible = false
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+offset_left = 146.0
+offset_top = 373.0
+offset_right = 423.0
+offset_bottom = 422.0
+text = "El enemigo no puede ser derrotado,
+ atraviesa el nuevo camino."
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="ver_mensaje" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(473, 390)
+shape = SubResource("RectangleShape2D_4e54g")
+debug_color = Color(0.803922, 0.00392157, 0, 0.419608)
+
+[node name="Area2D2" type="Area2D" parent="."]
+
+[node name="no_ver_mensaje" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(172, 412.75)
+shape = SubResource("RectangleShape2D_wgak8")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Area2D2" to="." method="_on_area_2d_2_body_entered"]

@@ -11,3 +11,6 @@ var attack_effect = "normal"
 var number_attack = 0
 
 var positionplayer: Vector2
+
+var mensaje: bool = false
+var deadmensaje: bool = false
