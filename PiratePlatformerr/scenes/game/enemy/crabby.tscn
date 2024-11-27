@@ -1,48 +1,55 @@
-[gd_scene load_steps=49 format=3 uid="uid://bo37g7mv4j6pn"]
+[gd_scene load_steps=56 format=3 uid="uid://bo37g7mv4j6pn"]
 
-[ext_resource type="Texture2D" uid="uid://pspt6movicar" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/06_anticipation/anticipation_01.png" id="1_rb33o"]
-[ext_resource type="Texture2D" uid="uid://ddjoqp2flcc1b" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/06_anticipation/anticipation_02.png" id="2_k4skr"]
-[ext_resource type="Texture2D" uid="uid://r5c5na2n5b1h" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/06_anticipation/anticipation_03.png" id="3_bfy8s"]
-[ext_resource type="Texture2D" uid="uid://34mgxnx6hwqv" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/07_attack/attack_01.png" id="4_ihu1j"]
-[ext_resource type="Texture2D" uid="uid://bay3liqt02efg" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/07_attack/attack_02.png" id="5_8ukob"]
-[ext_resource type="Texture2D" uid="uid://ufw1mwaetfv4" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/07_attack/attack_03.png" id="6_tnlr2"]
-[ext_resource type="Texture2D" uid="uid://ctjbxoqefudp2" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/07_attack/attack_04.png" id="7_i4dln"]
-[ext_resource type="Texture2D" uid="uid://5u7hal465vr3" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/10_dead_ground/dead_ground_01.png" id="8_w3c8w"]
-[ext_resource type="Texture2D" uid="uid://c46i7pmprtobq" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/10_dead_ground/dead_ground_02.png" id="9_qklwy"]
-[ext_resource type="Texture2D" uid="uid://skbdprtyxu6c" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/10_dead_ground/dead_ground_03.png" id="10_v0yof"]
-[ext_resource type="Texture2D" uid="uid://dqbnr5ue7k85n" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/10_dead_ground/dead_ground_04.png" id="11_bdy08"]
-[ext_resource type="Texture2D" uid="uid://bs6ox3lxhe8lu" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/09_dead_hit/dead_hit_01.png" id="12_t8jcn"]
-[ext_resource type="Texture2D" uid="uid://cp2s31kg0m1bs" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/09_dead_hit/dead_hit_02.png" id="13_g1ae8"]
-[ext_resource type="Texture2D" uid="uid://bbvahf6vte7re" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/09_dead_hit/dead_hit_03.png" id="14_t8ltj"]
-[ext_resource type="Texture2D" uid="uid://6ue8mq4811mk" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/09_dead_hit/dead_hit_04.png" id="15_4ibdp"]
-[ext_resource type="Texture2D" uid="uid://diy4hnc4w7vk1" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/04_fall/fall_01.png" id="16_fb658"]
-[ext_resource type="Texture2D" uid="uid://dv5v0ta4hk2si" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/05_ground/ground_01.png" id="17_5t053"]
-[ext_resource type="Texture2D" uid="uid://d2u3n554e6xpp" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/05_ground/ground_02.png" id="18_mcp51"]
-[ext_resource type="Texture2D" uid="uid://bwvf1ip8n6p16" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/08_hit/hit_01.png" id="19_snn4j"]
-[ext_resource type="Texture2D" uid="uid://bbmm5hb3ic3e1" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/08_hit/hit_02.png" id="20_ae0vv"]
-[ext_resource type="Texture2D" uid="uid://d4fwhsfcq0brv" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/08_hit/hit_03.png" id="21_lq3dd"]
-[ext_resource type="Texture2D" uid="uid://cg400327rdvk4" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/08_hit/hit_04.png" id="22_7qqld"]
-[ext_resource type="Texture2D" uid="uid://cmlgr3i0h1klc" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/01_idle/idle_01.png" id="23_vb7et"]
-[ext_resource type="Texture2D" uid="uid://s1tac8j0julm" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/01_idle/idle_02.png" id="24_5udtd"]
-[ext_resource type="Texture2D" uid="uid://nnj02i3cb3tv" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/01_idle/idle_03.png" id="25_0uop8"]
-[ext_resource type="Texture2D" uid="uid://boslfkpg7km6o" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/01_idle/idle_04.png" id="26_gcmbm"]
-[ext_resource type="Texture2D" uid="uid://niff46vwo1nb" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/01_idle/idle_05.png" id="27_64jrh"]
-[ext_resource type="Texture2D" uid="uid://ma46kh4s1so1" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/01_idle/idle_06.png" id="28_6yd24"]
-[ext_resource type="Texture2D" uid="uid://4dwynhhres5a" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/01_idle/idle_07.png" id="29_wejhx"]
-[ext_resource type="Texture2D" uid="uid://b5hpq7nojkbkx" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/01_idle/idle_08.png" id="30_0xl6j"]
-[ext_resource type="Texture2D" uid="uid://cgmingtsl672i" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/01_idle/idle_09.png" id="31_11efd"]
-[ext_resource type="Texture2D" uid="uid://dibqofrll2chu" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/03_jump/jump_01.png" id="32_71h7c"]
-[ext_resource type="Texture2D" uid="uid://2dfgpyratrrp" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/03_jump/jump_02.png" id="33_yoki7"]
-[ext_resource type="Texture2D" uid="uid://g0s57bnqtpfx" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/03_jump/jump_03.png" id="34_u4y5w"]
-[ext_resource type="Texture2D" uid="uid://bb5vyiysaeqmp" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/02_run/run_01.png" id="35_g44gh"]
-[ext_resource type="Texture2D" uid="uid://ck7p3xtem2h6x" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/02_run/run_02.png" id="36_udcj3"]
-[ext_resource type="Texture2D" uid="uid://dsev11850rvlg" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/02_run/run_03.png" id="37_n0xov"]
-[ext_resource type="Texture2D" uid="uid://1hjg4e0bogyw" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/02_run/run_04.png" id="38_hpmow"]
-[ext_resource type="Texture2D" uid="uid://cp44q5o10neip" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/02_run/run_05.png" id="39_n67ti"]
-[ext_resource type="Texture2D" uid="uid://c30qmmnsv1q2m" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/02_run/run_06.png" id="40_dfni3"]
+[ext_resource type="Texture2D" uid="uid://cdtttj4kphx77" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_00.png" id="1_etpdb"]
+[ext_resource type="Texture2D" uid="uid://b1rf5b6id5j4n" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_01.png" id="2_oeux0"]
+[ext_resource type="Texture2D" uid="uid://bj0adgvpln1de" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_02.png" id="3_wl4wj"]
+[ext_resource type="Texture2D" uid="uid://dulmgvv3wcx8j" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_03.png" id="4_7rch7"]
+[ext_resource type="Texture2D" uid="uid://c3u3h6e8pjwl0" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_33.png" id="5_muo3a"]
+[ext_resource type="Texture2D" uid="uid://c03ujcc7u2133" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_39.png" id="6_gjlgu"]
+[ext_resource type="Texture2D" uid="uid://cy0qf8b6ctnvi" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_48.png" id="7_3l70n"]
+[ext_resource type="Texture2D" uid="uid://nmtw5s7lmtok" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_49.png" id="8_e351q"]
+[ext_resource type="Texture2D" uid="uid://cgfesa20x51ox" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_50.png" id="9_gn3kf"]
+[ext_resource type="Texture2D" uid="uid://dc8ejoohvy8tr" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_51.png" id="10_d2uq8"]
+[ext_resource type="Texture2D" uid="uid://b10nj7ur38aec" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_52.png" id="11_r350v"]
+[ext_resource type="Texture2D" uid="uid://bd1tj1pg4he1u" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_53.png" id="12_xg0oc"]
+[ext_resource type="Texture2D" uid="uid://dy2tgjk2ecqy1" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_59.png" id="13_ej1ey"]
+[ext_resource type="Texture2D" uid="uid://h6fitd5m2n46" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_60.png" id="14_3qhgv"]
+[ext_resource type="Texture2D" uid="uid://kyvdv1bipgkn" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_69.png" id="15_j1jsl"]
+[ext_resource type="Texture2D" uid="uid://b48ffa6iqvj16" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_70.png" id="16_dwooy"]
+[ext_resource type="Texture2D" uid="uid://byx3yi52g4yv1" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_71.png" id="17_g2w35"]
+[ext_resource type="Texture2D" uid="uid://dnel205ttoix4" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_72.png" id="18_3vb28"]
+[ext_resource type="Texture2D" uid="uid://2ngleuyvejla" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_73.png" id="19_i8u31"]
+[ext_resource type="Texture2D" uid="uid://c6jja2im6dft5" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_75.png" id="20_crdlm"]
+[ext_resource type="Texture2D" uid="uid://c5sfm5m3qnmrn" path="res://scenes/game/enemy/isra-maraver-monster-006/isra-maraver-monster-006-71.png (1).png" id="21_7fapm"]
+[ext_resource type="Texture2D" uid="uid://bsnf830ikq03b" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_74.png" id="22_h6ikx"]
+[ext_resource type="Texture2D" uid="uid://bow3awr1bx4n2" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_76.png" id="23_amh6p"]
+[ext_resource type="Texture2D" uid="uid://0v3i8ceet07h" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_34.png" id="24_1onyt"]
+[ext_resource type="Texture2D" uid="uid://dbfla0wan37wd" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_35.png" id="25_4iown"]
+[ext_resource type="Texture2D" uid="uid://8f2k87dnn2on" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_64.png" id="26_x67xg"]
+[ext_resource type="Texture2D" uid="uid://bl6oc3ne7qd2" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_65.png" id="27_n54mj"]
+[ext_resource type="Texture2D" uid="uid://6qr0etd8q0cl" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_05.png" id="28_ri1eb"]
+[ext_resource type="Texture2D" uid="uid://t1owoc50g842" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_06.png" id="29_tn7wg"]
+[ext_resource type="Texture2D" uid="uid://comxy2nafleyp" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_07.png" id="30_73nvp"]
+[ext_resource type="Texture2D" uid="uid://cspnbu7s87xcd" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_08.png" id="31_rdaum"]
+[ext_resource type="Texture2D" uid="uid://bht66g1rmdbyg" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_09.png" id="32_kf78p"]
+[ext_resource type="Texture2D" uid="uid://sgv7tlmd4dsi" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_10.png" id="33_7v051"]
+[ext_resource type="Texture2D" uid="uid://b3irit5hghlbn" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_11.png" id="34_kaey1"]
+[ext_resource type="Texture2D" uid="uid://vy5amyygfl7x" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_13.png" id="35_gax7j"]
+[ext_resource type="Texture2D" uid="uid://bdspkrpef6gm6" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_14.png" id="36_7bsjn"]
+[ext_resource type="Texture2D" uid="uid://dq1t6s1em5gj4" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_17.png" id="37_77ubw"]
+[ext_resource type="Texture2D" uid="uid://duke8anrdeds4" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_18.png" id="38_nq470"]
+[ext_resource type="Texture2D" uid="uid://cfc4wbgo1u7m" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_19.png" id="39_eym5m"]
+[ext_resource type="Texture2D" uid="uid://6wg5qgjnks1y" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_20.png" id="40_gv5qg"]
 [ext_resource type="Texture2D" uid="uid://dh75ps276gm0g" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/11_attack_effect/attack_effect_01.png" id="41_4x6hr"]
+[ext_resource type="Texture2D" uid="uid://dswjabv1to5c0" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_21.png" id="41_q64do"]
+[ext_resource type="Texture2D" uid="uid://cdi4hbsqadihm" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_36.png" id="42_0otwp"]
 [ext_resource type="Texture2D" uid="uid://61tsaa7itvvm" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/11_attack_effect/attack_effect_02.png" id="42_em4du"]
+[ext_resource type="Texture2D" uid="uid://btau2beldf7xp" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_37.png" id="43_stipf"]
 [ext_resource type="Texture2D" uid="uid://l2xhb3srapic" path="res://assets/sprites/treasure_hunters/the_crusty_crew/sprites/crabby/11_attack_effect/attack_effect_03.png" id="43_weqld"]
+[ext_resource type="Texture2D" uid="uid://bsofbmmt5srvn" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_38.png" id="44_3ftth"]
+[ext_resource type="Texture2D" uid="uid://dwm8d3axyxtx0" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_40.png" id="45_4gatu"]
+[ext_resource type="Texture2D" uid="uid://ddpmqhgwhai5s" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_41.png" id="46_vi0io"]
+[ext_resource type="Texture2D" uid="uid://b87xjfj3qvfte" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_42.png" id="47_b3244"]
 
 [sub_resource type="GDScript" id="GDScript_6chrj"]
 script/source = "extends CharacterBody2D
@@ -323,13 +330,16 @@ func _on_enemy_animation_animation_finished():
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_rb33o")
+"texture": ExtResource("1_etpdb")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_k4skr")
+"texture": ExtResource("2_oeux0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_bfy8s")
+"texture": ExtResource("3_wl4wj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_7rch7")
 }],
 "loop": true,
 "name": &"anticipation",
@@ -337,16 +347,37 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_ihu1j")
+"texture": ExtResource("5_muo3a")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_8ukob")
+"texture": ExtResource("6_gjlgu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_tnlr2")
+"texture": ExtResource("7_3l70n")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_i4dln")
+"texture": ExtResource("8_e351q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_gn3kf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_d2uq8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_r350v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_xg0oc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ej1ey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_3qhgv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_3qhgv")
 }],
 "loop": true,
 "name": &"attack",
@@ -354,33 +385,45 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("8_w3c8w")
+"texture": ExtResource("15_j1jsl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_qklwy")
+"texture": ExtResource("16_dwooy")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_v0yof")
+"texture": ExtResource("17_g2w35")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_bdy08")
+"texture": ExtResource("17_g2w35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_3vb28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_i8u31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_crdlm")
 }],
 "loop": false,
 "name": &"dead_ground",
-"speed": 5.0
+"speed": 4.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("12_t8jcn")
+"texture": ExtResource("21_7fapm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_g1ae8")
+"texture": ExtResource("19_i8u31")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_t8ltj")
+"texture": ExtResource("22_h6ikx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_4ibdp")
+"texture": ExtResource("20_crdlm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_amh6p")
 }],
 "loop": false,
 "name": &"dead_hit",
@@ -388,7 +431,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("16_fb658")
+"texture": ExtResource("5_muo3a")
 }],
 "loop": true,
 "name": &"fall",
@@ -396,10 +439,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("17_5t053")
+"texture": ExtResource("24_1onyt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("18_mcp51")
+"texture": ExtResource("25_4iown")
 }],
 "loop": true,
 "name": &"ground",
@@ -407,16 +450,22 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("19_snn4j")
+"texture": ExtResource("21_7fapm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("20_ae0vv")
+"texture": ExtResource("26_x67xg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("21_lq3dd")
+"texture": ExtResource("27_n54mj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("22_7qqld")
+"texture": ExtResource("15_j1jsl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_dwooy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_g2w35")
 }],
 "loop": false,
 "name": &"hit",
@@ -424,31 +473,31 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("23_vb7et")
+"texture": ExtResource("28_ri1eb")
 }, {
 "duration": 1.0,
-"texture": ExtResource("24_5udtd")
+"texture": ExtResource("29_tn7wg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("25_0uop8")
+"texture": ExtResource("30_73nvp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("26_gcmbm")
+"texture": ExtResource("31_rdaum")
 }, {
 "duration": 1.0,
-"texture": ExtResource("27_64jrh")
+"texture": ExtResource("32_kf78p")
 }, {
 "duration": 1.0,
-"texture": ExtResource("28_6yd24")
+"texture": ExtResource("33_7v051")
 }, {
 "duration": 1.0,
-"texture": ExtResource("29_wejhx")
+"texture": ExtResource("34_kaey1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("30_0xl6j")
+"texture": ExtResource("35_gax7j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("31_11efd")
+"texture": ExtResource("36_7bsjn")
 }],
 "loop": true,
 "name": &"idle",
@@ -456,13 +505,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("32_71h7c")
+"texture": ExtResource("37_77ubw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("33_yoki7")
+"texture": ExtResource("38_nq470")
 }, {
 "duration": 1.0,
-"texture": ExtResource("34_u4y5w")
+"texture": ExtResource("39_eym5m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_gv5qg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_q64do")
 }],
 "loop": true,
 "name": &"jump",
@@ -470,30 +525,33 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("35_g44gh")
+"texture": ExtResource("42_0otwp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("36_udcj3")
+"texture": ExtResource("43_stipf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("37_n0xov")
+"texture": ExtResource("44_3ftth")
 }, {
 "duration": 1.0,
-"texture": ExtResource("38_hpmow")
+"texture": ExtResource("6_gjlgu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("39_n67ti")
+"texture": ExtResource("45_4gatu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("40_dfni3")
+"texture": ExtResource("46_vi0io")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_b3244")
 }],
 "loop": true,
 "name": &"run",
-"speed": 5.0
+"speed": 6.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ku5hj"]
-size = Vector2(40, 23)
+size = Vector2(48, 27.5)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6nhye"]
 animations = [{
@@ -527,11 +585,14 @@ size = Vector2(42, 25)
 script = SubResource("GDScript_6chrj")
 
 [node name="EnemyAnimation" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 1.90735e-06)
+scale = Vector2(0.14875, 0.145625)
 sprite_frames = SubResource("SpriteFrames_fq7gh")
-animation = &"anticipation"
+animation = &"run"
+frame_progress = 0.123109
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(2, 1.5)
+position = Vector2(0, -0.75)
 shape = SubResource("RectangleShape2D_ku5hj")
 
 [node name="EnemyEffect" type="AnimatedSprite2D" parent="."]
@@ -541,7 +602,6 @@ animation = &"idle"
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(2, 1.5)
 shape = SubResource("RectangleShape2D_62ixa")
 one_way_collision_margin = 0.0
 
