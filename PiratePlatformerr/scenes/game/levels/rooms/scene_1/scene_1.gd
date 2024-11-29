@@ -46,7 +46,9 @@ func _on_area_2d_body_entered(body):            #collisionshape red
 		Global.showportal = true
 		$Area2D/Fight.play() #reproducir musica al entrar
 		$AmbientSound.stop() #para musica ambiental al entrar
-
+	#elif !Global.showportal:
+		call_deferred("door")
+	
 func _on_area_2d_2_body_entered(body):           #collisionshape skyblue
 	if body.is_in_group("player"):
 		Global.mensaje= false
@@ -55,3 +57,7 @@ func _on_area_2d_body_exited(body):
 	if body.is_in_group("player"):
 		$Area2D/Fight.stop() #parar musica al salir
 		$AmbientSound.play() #reproducir musica ambiental al salir
+	
+func door():
+	$Objects/DoorChangeScene/CollisionShape2D.disabled = false
+	

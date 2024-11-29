@@ -1,0 +1,236 @@
+[gd_scene load_steps=52 format=3 uid="uid://d1jx6p7agxr2m"]
+
+[ext_resource type="Texture2D" uid="uid://b8pwalrd1pfc5" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss25.png" id="1_x3h6s"]
+[ext_resource type="Texture2D" uid="uid://cko533mgxbeqv" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss26.png" id="2_0ixt6"]
+[ext_resource type="Texture2D" uid="uid://byjkty5o41g4j" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss27.png" id="3_dd1jl"]
+[ext_resource type="Texture2D" uid="uid://bbq8wdmpcnp35" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss28.png" id="4_bb0sg"]
+[ext_resource type="Texture2D" uid="uid://dth527udk64j7" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss29.png" id="5_iiewm"]
+[ext_resource type="Texture2D" uid="uid://duwfrhybg5lsy" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss30.png" id="6_b40qg"]
+[ext_resource type="Texture2D" uid="uid://cip6aa5iunoh1" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss31.png" id="7_j2va6"]
+[ext_resource type="Texture2D" uid="uid://c750aun186j3l" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss32.png" id="8_3vuy6"]
+[ext_resource type="Texture2D" uid="uid://bq57bpqnrjqky" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss33.png" id="9_g2tkh"]
+[ext_resource type="Texture2D" uid="uid://t8xk3ylrsfm4" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss34.png" id="10_r7g3p"]
+[ext_resource type="Texture2D" uid="uid://5ewvl2j0piu3" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss35.png" id="11_5bvhe"]
+[ext_resource type="Texture2D" uid="uid://dmknukach21eh" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss36.png" id="12_3ugu1"]
+[ext_resource type="Texture2D" uid="uid://ij4k3vkxd2xr" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss37.png" id="13_ojdm4"]
+[ext_resource type="Texture2D" uid="uid://3mu660hcv0kc" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss38.png" id="14_jatla"]
+[ext_resource type="Texture2D" uid="uid://blc1u3tok78xo" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss39.png" id="15_63eaf"]
+[ext_resource type="Texture2D" uid="uid://b7ystdw16w7gr" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss40.png" id="16_nehsu"]
+[ext_resource type="Texture2D" uid="uid://bo8chsef4xylq" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss41.png" id="17_wiqy3"]
+[ext_resource type="Texture2D" uid="uid://bmcbwmgtdcua1" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss42.png" id="18_tvkms"]
+[ext_resource type="Texture2D" uid="uid://cd3l0cetd6hvs" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss43.png" id="19_g5b3k"]
+[ext_resource type="Texture2D" uid="uid://b8nr7u3bkf1ws" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss44.png" id="20_nbbc4"]
+[ext_resource type="Texture2D" uid="uid://4er3g0xffbe0" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss45.png" id="21_tj8y5"]
+[ext_resource type="Texture2D" uid="uid://3otmueu3rrjh" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Explosion (muerte)/Layer 1_booss50.png" id="22_nckx8"]
+[ext_resource type="Texture2D" uid="uid://diwyqbpvvvrhq" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Explosion (muerte)/Layer 1_booss51.png" id="23_rht4k"]
+[ext_resource type="Texture2D" uid="uid://buyk8hv70nywq" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Explosion (muerte)/Layer 1_booss52.png" id="24_l47h8"]
+[ext_resource type="Texture2D" uid="uid://dgxnlpikkv0r4" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Explosion (muerte)/Layer 1_booss53.png" id="25_fhhnu"]
+[ext_resource type="Texture2D" uid="uid://bl2laoev0mbog" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Explosion (muerte)/Layer 1_booss54.png" id="26_fkyri"]
+[ext_resource type="Texture2D" uid="uid://c1onrmcxjxvh0" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Explosion (muerte)/Layer 1_booss55.png" id="27_mb4rb"]
+[ext_resource type="Texture2D" uid="uid://cx8gwmqkyvmm5" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Explosion (muerte)/Layer 1_booss56.png" id="28_rnbsp"]
+[ext_resource type="Texture2D" uid="uid://pdrkaqv5556q" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Explosion (muerte)/Layer 1_booss57.png" id="29_xjbhl"]
+[ext_resource type="Texture2D" uid="uid://d3oat6iyxytxk" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/idle/Layer 1_booss17.png" id="30_y4cwf"]
+[ext_resource type="Texture2D" uid="uid://b0qfwgsy2cfvl" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/idle/Layer 1_booss18.png" id="31_r6ksk"]
+[ext_resource type="Texture2D" uid="uid://66n8hyif1xql" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/idle/Layer 1_booss19.png" id="32_s1u67"]
+[ext_resource type="Texture2D" uid="uid://c56mjenoekois" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/idle/Layer 1_booss20.png" id="33_cmnqc"]
+[ext_resource type="Texture2D" uid="uid://db4j8d411l1x1" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/idle/Layer 1_booss21.png" id="34_2pe2n"]
+[ext_resource type="Texture2D" uid="uid://udm5ird7r6ed" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/idle/Layer 1_booss22.png" id="35_wkni0"]
+[ext_resource type="Texture2D" uid="uid://bcfg4lkv16jal" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/idle/Layer 1_booss23.png" id="36_qsjo6"]
+[ext_resource type="Texture2D" uid="uid://clp2biul8frp3" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/idle/Layer 1_booss24.png" id="37_v1ngl"]
+[ext_resource type="Texture2D" uid="uid://usa5iwvaydr7" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/camina/Layer 1_booss01.png" id="38_bibuc"]
+[ext_resource type="Texture2D" uid="uid://chotnx2b57b3d" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/camina/Layer 1_booss02.png" id="39_ynnno"]
+[ext_resource type="Texture2D" uid="uid://dsc26wou4u0cw" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/camina/Layer 1_booss03.png" id="40_i54qs"]
+[ext_resource type="Texture2D" uid="uid://pevs5d3nfnm3" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/camina/Layer 1_booss04.png" id="41_fdfcy"]
+[ext_resource type="Texture2D" uid="uid://ba8ddb51k0ude" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/camina/Layer 1_booss05.png" id="42_opq2y"]
+[ext_resource type="Texture2D" uid="uid://dbq42psl573qy" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/camina/Layer 1_booss06.png" id="43_1dras"]
+[ext_resource type="Texture2D" uid="uid://k4rdh6tc3mb8" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/camina/Layer 1_booss07.png" id="44_6u7fk"]
+[ext_resource type="Texture2D" uid="uid://d06kwrlu38myd" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/camina/Layer 1_booss08.png" id="45_ur56e"]
+[ext_resource type="Texture2D" uid="uid://dg24isrdw4fwy" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/camina/Layer 1_booss09.png" id="46_w8557"]
+[ext_resource type="Texture2D" uid="uid://c7fe5s77s8gyt" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/camina/Layer 1_booss10.png" id="47_iuvf0"]
+[ext_resource type="Texture2D" uid="uid://bfjdjfbuxgbhf" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/camina/Layer 1_booss11.png" id="48_lct4r"]
+[ext_resource type="Texture2D" uid="uid://paje0pqtq1g4" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/camina/Layer 1_booss12.png" id="49_llvfe"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ikuqc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_x3h6s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0ixt6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dd1jl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_bb0sg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_iiewm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_b40qg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_j2va6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_3vuy6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_g2tkh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_r7g3p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_5bvhe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_3ugu1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ojdm4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_jatla")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_63eaf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_nehsu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_wiqy3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_tvkms")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_g5b3k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_nbbc4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_tj8y5")
+}],
+"loop": true,
+"name": &"Atack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_nckx8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_rht4k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_l47h8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_fhhnu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_fkyri")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_mb4rb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_rnbsp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_xjbhl")
+}],
+"loop": true,
+"name": &"Dead",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30_y4cwf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_r6ksk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_s1u67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_cmnqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_2pe2n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_wkni0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_qsjo6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_v1ngl")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("38_bibuc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_ynnno")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_i54qs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_fdfcy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_opq2y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_1dras")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_6u7fk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_ur56e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_w8557")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_iuvf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_lct4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_llvfe")
+}],
+"loop": true,
+"name": &"Walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8crwu"]
+size = Vector2(284, 147)
+
+[node name="Bossfinal" type="CharacterBody2D"]
+
+[node name="bossMov" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ikuqc")
+animation = &"Atack"
+frame = 12
+frame_progress = 0.111972
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-80, 108.5)
+shape = SubResource("RectangleShape2D_8crwu")
