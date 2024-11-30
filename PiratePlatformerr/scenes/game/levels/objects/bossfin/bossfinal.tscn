@@ -1,5 +1,6 @@
-[gd_scene load_steps=52 format=3 uid="uid://d1jx6p7agxr2m"]
+[gd_scene load_steps=54 format=3 uid="uid://d1jx6p7agxr2m"]
 
+[ext_resource type="Script" path="res://scenes/game/levels/objects/bossfin/bossfinal.gd" id="1_6nfl0"]
 [ext_resource type="Texture2D" uid="uid://b8pwalrd1pfc5" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss25.png" id="1_x3h6s"]
 [ext_resource type="Texture2D" uid="uid://cko533mgxbeqv" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss26.png" id="2_0ixt6"]
 [ext_resource type="Texture2D" uid="uid://byjkty5o41g4j" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/boss/Attake/Layer 1_booss27.png" id="3_dd1jl"]
@@ -221,16 +222,27 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8crwu"]
-size = Vector2(284, 147)
+size = Vector2(281, 160.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j5cof"]
+size = Vector2(291, 169)
 
 [node name="Bossfinal" type="CharacterBody2D"]
+script = ExtResource("1_6nfl0")
 
 [node name="bossMov" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ikuqc")
 animation = &"Atack"
-frame = 12
-frame_progress = 0.111972
+frame = 17
+frame_progress = 0.484773
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-80, 108.5)
+[node name="CollisionShape" type="CollisionShape2D" parent="."]
+position = Vector2(-98.5, 104.25)
 shape = SubResource("RectangleShape2D_8crwu")
+
+[node name="Hit_Box" type="Area2D" parent="."]
+
+[node name="CollisionShape2" type="CollisionShape2D" parent="Hit_Box"]
+position = Vector2(-98.5, 103.5)
+shape = SubResource("RectangleShape2D_j5cof")
+debug_color = Color(0.792157, 0.0705882, 1, 0.419608)

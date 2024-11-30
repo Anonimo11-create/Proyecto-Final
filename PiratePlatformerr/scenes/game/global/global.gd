@@ -14,3 +14,4 @@ var positionplayer: Vector2
 
 var mensaje: bool = false
 var showportal: bool = false
+var firstTime: bool = false

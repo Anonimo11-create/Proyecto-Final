@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://dhor7t5klwdwx"]
+[gd_scene load_steps=29 format=3 uid="uid://dhor7t5klwdwx"]
 
 [ext_resource type="TileSet" uid="uid://bx1rsqucrwm2i" path="res://assets/resources/bg_tile_set.tres" id="1_0t8t3"]
 [ext_resource type="PackedScene" uid="uid://8rbt5lmdrp0s" path="res://scenes/game/camera/camera.tscn" id="1_8l71v"]
@@ -23,18 +23,19 @@
 [ext_resource type="PackedScene" uid="uid://c36rtvjb7r5d1" path="res://scenes/game/levels/objects/taking_damage_object/red_potion.tscn" id="20_1tp5l"]
 [ext_resource type="PackedScene" uid="uid://b5qjvfbte4svk" path="res://scenes/game/levels/objects/pickable_object/pickable_object.tscn" id="20_juf85"]
 [ext_resource type="PackedScene" uid="uid://dl8afnvp5w315" path="res://scenes/game/levels/objects/power_up/power_up.tscn" id="22_vr6n4"]
-[ext_resource type="PackedScene" uid="uid://d1jx6p7agxr2m" path="res://scenes/game/levels/objects/bossfin/bossfinal.tscn" id="25_7v1sg"]
 [ext_resource type="AudioStream" uid="uid://c71d1bol0itso" path="res://assets/sounds/Fight.mp3" id="25_nt27i"]
-[ext_resource type="Script" path="res://scenes/game/levels/objects/bossfin/bossfinal.gd" id="26_i2xwb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3x710"]
 size = Vector2(31, 21)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4e54g"]
-size = Vector2(258, 406)
+size = Vector2(33, 406)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wgak8"]
 size = Vector2(34, 427.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7tjfg"]
+size = Vector2(20, 265)
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_j3e3j")
@@ -130,7 +131,7 @@ position = Vector2(-29, -206)
 
 [node name="FrontPalmTree3" parent="Objects" instance=ExtResource("14_uwyh7")]
 z_index = 1
-position = Vector2(1252, -174)
+position = Vector2(1264, -273)
 
 [node name="BackPalmTree2" parent="Objects" instance=ExtResource("13_uwpfu")]
 position = Vector2(-21, -130)
@@ -154,7 +155,8 @@ position = Vector2(298, -108)
 texture = ExtResource("13_amc1m")
 
 [node name="DoorChangeScene" parent="Objects" instance=ExtResource("17_ydyba")]
-position = Vector2(96.0001, -5.00001)
+visible = false
+position = Vector2(1253, -187)
 scale = Vector2(0.8, 0.8)
 _path_to_scene = "res://scenes/game/levels/rooms/scene_2/scene_2.tscn"
 
@@ -220,12 +222,10 @@ position = Vector2(132, 435)
 animation = "green_diamond"
 
 [node name="Crabby" parent="." instance=ExtResource("18_dyrn2")]
-position = Vector2(300, 475)
-animation = "run"
-moving_direction = "right"
+position = Vector2(479, 465)
 
 [node name="Cannon" parent="." instance=ExtResource("19_msljc")]
-position = Vector2(797, 340)
+position = Vector2(1340, 436)
 
 [node name="MainCharacter" parent="." instance=ExtResource("15_ooixx")]
 position = Vector2(120, 521)
@@ -261,15 +261,15 @@ offset_bottom = 422.0
 text = "El enemigo no puede ser derrotado,
  atraviesa el nuevo camino."
 
+[node name="Fight" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("25_nt27i")
+
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="ver_mensaje" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(438, 381)
+position = Vector2(1008, 308)
 shape = SubResource("RectangleShape2D_4e54g")
 debug_color = Color(0.803922, 0.00392157, 0, 0.419608)
-
-[node name="Fight" type="AudioStreamPlayer2D" parent="Area2D"]
-stream = ExtResource("25_nt27i")
 
 [node name="Area2D2" type="Area2D" parent="."]
 
@@ -277,9 +277,13 @@ stream = ExtResource("25_nt27i")
 position = Vector2(172, 412.75)
 shape = SubResource("RectangleShape2D_wgak8")
 
-[node name="Bossfinal" parent="." instance=ExtResource("25_7v1sg")]
-position = Vector2(1331, 301)
-script = ExtResource("26_i2xwb")
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(981, 289)
+shape = SubResource("RectangleShape2D_7tjfg")
+disabled = true
+debug_color = Color(0.580392, 0.384314, 1, 0.419608)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
