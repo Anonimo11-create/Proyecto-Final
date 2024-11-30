@@ -102,7 +102,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Cannon" type="RigidBody2D" groups=["cannon"]]
+[node name="CannonFuture" type="RigidBody2D" groups=["cannon"]]
 script = ExtResource("1_t2rj5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -110,8 +110,11 @@ position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_ktbri")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(0.494118, 0.466667, 0.431373, 0.94902)
 sprite_frames = SubResource("SpriteFrames_h5nvd")
-animation = &"idle"
+animation = &"fire"
+frame = 5
+frame_progress = 1.0
 
 [node name="AnimatedSprite2DEffects" type="AnimatedSprite2D" parent="."]
 position = Vector2(-25, -1)
