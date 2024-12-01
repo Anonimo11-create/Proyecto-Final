@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://dhor7t5klwdwx"]
+[gd_scene load_steps=30 format=3 uid="uid://dhor7t5klwdwx"]
 
 [ext_resource type="TileSet" uid="uid://bx1rsqucrwm2i" path="res://assets/resources/bg_tile_set.tres" id="1_0t8t3"]
 [ext_resource type="PackedScene" uid="uid://8rbt5lmdrp0s" path="res://scenes/game/camera/camera.tscn" id="1_8l71v"]
@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://c36rtvjb7r5d1" path="res://scenes/game/levels/objects/taking_damage_object/red_potion.tscn" id="20_1tp5l"]
 [ext_resource type="PackedScene" uid="uid://b5qjvfbte4svk" path="res://scenes/game/levels/objects/pickable_object/pickable_object.tscn" id="20_juf85"]
 [ext_resource type="PackedScene" uid="uid://dl8afnvp5w315" path="res://scenes/game/levels/objects/power_up/power_up.tscn" id="22_vr6n4"]
+[ext_resource type="PackedScene" uid="uid://6j2lh0k2m7bm" path="res://scenes/game/levels/objects/AngryPig/angry_pig.tscn" id="25_dpawt"]
 [ext_resource type="AudioStream" uid="uid://c71d1bol0itso" path="res://assets/sounds/Fight.mp3" id="25_nt27i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3x710"]
@@ -284,6 +285,9 @@ position = Vector2(981, 289)
 shape = SubResource("RectangleShape2D_7tjfg")
 disabled = true
 debug_color = Color(0.580392, 0.384314, 1, 0.419608)
+
+[node name="AngryPig" parent="." instance=ExtResource("25_dpawt")]
+position = Vector2(1197, 454)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

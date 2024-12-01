@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://b1d750o6hts76"]
+[gd_scene load_steps=11 format=3 uid="uid://b1d750o6hts76"]
 
 [ext_resource type="TileSet" uid="uid://bx1rsqucrwm2i" path="res://assets/resources/bg_tile_set.tres" id="1_mv2rp"]
 [ext_resource type="PackedScene" uid="uid://ca3ueo0yewjov" path="res://scenes/game/characters/main_character/main_character.tscn" id="2_e4qjl"]
@@ -8,7 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://6j2lh0k2m7bm" path="res://scenes/game/levels/objects/AngryPig/angry_pig.tscn" id="6_ahfgq"]
 [ext_resource type="PackedScene" uid="uid://d08vcfyoym2df" path="res://scenes/game/levels/objects/JumpPotion/jump_potion.tscn" id="8_ntmrl"]
 [ext_resource type="PackedScene" uid="uid://c2e1lhm1w4re4" path="res://scenes/game/levels/objects/damage_object/spikes/spikes.tscn" id="9_cl508"]
-[ext_resource type="PackedScene" uid="uid://d1jx6p7agxr2m" path="res://scenes/game/levels/objects/bossfin/bossfinal.tscn" id="10_7vsu6"]
 [ext_resource type="PackedScene" uid="uid://b5qjvfbte4svk" path="res://scenes/game/levels/objects/pickable_object/pickable_object.tscn" id="10_q6ou8"]
 [ext_resource type="Texture2D" uid="uid://byaqvnxkp566d" path="res://scenes/game/levels/rooms/scene_3/future.jpg" id="11_1e8f6"]
 
@@ -88,9 +87,6 @@ position = Vector2(800, 338)
 
 [node name="PickableObject5" parent="." instance=ExtResource("10_q6ou8")]
 position = Vector2(1163, 247)
-
-[node name="Bossfinal" parent="." instance=ExtResource("10_7vsu6")]
-position = Vector2(395, 351)
 
 [node name="Future" type="Sprite2D" parent="."]
 show_behind_parent = true

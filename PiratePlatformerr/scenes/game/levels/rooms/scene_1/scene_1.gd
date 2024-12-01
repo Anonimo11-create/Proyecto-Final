@@ -16,13 +16,14 @@ func _ready():
 	# Escuchamos cuando el personaje entre al área de contacto
 	$AmbientSound.play()
 	_area_next_level.body_entered.connect(_load_nex_level)
-
+	$Fight.stop()
 
 func _process(delta):
 	mensaje()
 	showportal()
-	if !$Fight.is_playing() and Global.mensaje:
-		$Fight.play()
+	#if !$Fight.is_playing() and Global.mensaje:
+		#$Fight.play()
+
 
 # Cargamos el siguiente nivel (la siguiente escena)
 func _load_nex_level(body):

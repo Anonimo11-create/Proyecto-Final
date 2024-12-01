@@ -1,20 +1,54 @@
-[gd_scene load_steps=4 format=3 uid="uid://brhmupxo2xjim"]
+[gd_scene load_steps=10 format=3 uid="uid://brhmupxo2xjim"]
 
 [ext_resource type="Script" path="res://scenes/game/levels/objects/change_scene/door_change_scene.gd" id="1_o73yr"]
-[ext_resource type="Texture2D" uid="uid://cgho6nexmb30i" path="res://assets/sprites/treasure_hunters/pirate_ship/sprites/decorations/door/closing/01.png" id="2_gps70"]
+[ext_resource type="Texture2D" uid="uid://cccun6ojnkfpo" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/portal/tile000.png" id="2_gm7o8"]
+[ext_resource type="Texture2D" uid="uid://ctrei314ctuxu" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/portal/tile001.png" id="3_bfls7"]
+[ext_resource type="Texture2D" uid="uid://duxjsfjcbvolv" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/portal/tile002.png" id="4_ehl0r"]
+[ext_resource type="Texture2D" uid="uid://duhcb3hjjkate" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/portal/tile003.png" id="5_tihvv"]
+[ext_resource type="Texture2D" uid="uid://d3e13726ay5ge" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/portal/tile004.png" id="6_76a2c"]
+[ext_resource type="Texture2D" uid="uid://cgnflpl2p1ibw" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/portal/tile005.png" id="7_fcqtu"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s54ew"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_gm7o8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_bfls7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ehl0r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_tihvv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_76a2c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_fcqtu")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3m0yw"]
-size = Vector2(32, 45)
+size = Vector2(18.5, 49.5)
 
 [node name="DoorChangeScene" type="Area2D"]
+scale = Vector2(2, 2)
 script = ExtResource("1_o73yr")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, 18)
-texture = ExtResource("2_gps70")
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_s54ew")
+animation = &"Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 26.5)
+position = Vector2(1.25, 17.75)
 shape = SubResource("RectangleShape2D_3m0yw")
 disabled = true
 

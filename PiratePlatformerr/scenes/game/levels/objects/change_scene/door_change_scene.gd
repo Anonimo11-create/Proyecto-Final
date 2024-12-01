@@ -15,7 +15,8 @@ extends Node2D
 
 
 # Función de inicialización
-#func _ready():
+func _ready():
+	$Sprite2D.play("Idle")
 	#_area.body_entered.connect(_load_nex_level)
 #
 #

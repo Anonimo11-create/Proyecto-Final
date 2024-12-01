@@ -5,6 +5,7 @@ var gravity = 10
 var speed:int
 var life:int = 2
 
+@export var recibedaño = false
 var _body:Node2D
 var izquierda:bool = true
 var angryState:bool = false
@@ -73,7 +74,8 @@ func idle():
 
 func _on_hit_box_area_entered(area):
 	if area.is_in_group("hit"):
-		life -= 1
+		if recibedaño:
+			life -= 1
 
 func _on_movility_frame_changed():
 	if $movility.get_animation() == "Hit 2" and $movility.frame == 6:

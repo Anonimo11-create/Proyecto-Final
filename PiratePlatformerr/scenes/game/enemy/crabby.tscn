@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://bo37g7mv4j6pn"]
+[gd_scene load_steps=54 format=3 uid="uid://bo37g7mv4j6pn"]
 
 [ext_resource type="Texture2D" uid="uid://cdtttj4kphx77" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_00.png" id="1_etpdb"]
 [ext_resource type="Texture2D" uid="uid://b1rf5b6id5j4n" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_01.png" id="2_oeux0"]
@@ -12,8 +12,6 @@
 [ext_resource type="Texture2D" uid="uid://dc8ejoohvy8tr" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_51.png" id="10_d2uq8"]
 [ext_resource type="Texture2D" uid="uid://b10nj7ur38aec" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_52.png" id="11_r350v"]
 [ext_resource type="Texture2D" uid="uid://bd1tj1pg4he1u" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_53.png" id="12_xg0oc"]
-[ext_resource type="Texture2D" uid="uid://dy2tgjk2ecqy1" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_59.png" id="13_ej1ey"]
-[ext_resource type="Texture2D" uid="uid://h6fitd5m2n46" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_60.png" id="14_3qhgv"]
 [ext_resource type="Texture2D" uid="uid://kyvdv1bipgkn" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_69.png" id="15_j1jsl"]
 [ext_resource type="Texture2D" uid="uid://b48ffa6iqvj16" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_70.png" id="16_dwooy"]
 [ext_resource type="Texture2D" uid="uid://byx3yi52g4yv1" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_71.png" id="17_g2w35"]
@@ -61,6 +59,11 @@ var SPEED = 1000
 var gravity = ProjectSettings.get_setting(\"physics/2d/default_gravity\")
 
 
+
+
+
+
+
 func _physics_process(delta):
 	# Add the gravity.
 	print(direction)
@@ -81,7 +84,36 @@ func _physics_process(delta):
 		direction = -1
 	
 	
+	if not $Area2D/RayCastTerrain.is_colliding() and direction == -1:
+		direction = 1
+	elif not $Area2D/RayCastTerrain2.is_colliding() and direction == 1:
+		direction = -1
+	
 	move_and_slide()
+
+
+func _ready():
+	$EnemyAnimation.play(\"run\")
+
+func _on_enemy_animation_animation_finished():
+	if $EnemyAnimation.animation == \"attack\":
+		$EnemyAnimation.play(\"run\")
+
+
+func _on_area_2d_body_entered(body):
+	if body.is_in_group(\"player\"):
+		$EnemyAnimation.play(\"attack\")
+
+
+func _on_area_2d_body_exited(body):
+	if body.is_in_group(\"player\"):
+		$EnemyAnimation.play(\"run\")
+
+
+func _on_enemy_animation_frame_changed():
+	if $EnemyAnimation.animation == \"attack\":
+		if $EnemyAnimation.frame == 2:
+			Global.jugador.hit(2)
 "
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fq7gh"]
@@ -127,15 +159,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("12_xg0oc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_ej1ey")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_3qhgv")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_3qhgv")
 }],
 "loop": true,
 "name": &"attack",
@@ -309,7 +332,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ku5hj"]
-size = Vector2(48, 27.5)
+size = Vector2(32, 23)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6nhye"]
 animations = [{
@@ -337,7 +360,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_62ixa"]
-size = Vector2(42, 25)
+size = Vector2(52, 31)
 
 [node name="Crabby" type="CharacterBody2D"]
 script = SubResource("GDScript_6chrj")
@@ -346,10 +369,10 @@ script = SubResource("GDScript_6chrj")
 position = Vector2(0, 1.90735e-06)
 scale = Vector2(0.14875, 0.145625)
 sprite_frames = SubResource("SpriteFrames_fq7gh")
-animation = &"run"
+animation = &"attack"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -0.75)
+position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_ku5hj")
 
 [node name="EnemyEffect" type="AnimatedSprite2D" parent="."]
@@ -359,11 +382,16 @@ animation = &"idle"
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_62ixa")
 one_way_collision_margin = 0.0
 
 [node name="RayCastTerrain" type="RayCast2D" parent="Area2D"]
 position = Vector2(-19, -7)
+scale = Vector2(0.5, 0.5)
+
+[node name="RayCastTerrain2" type="RayCast2D" parent="Area2D"]
+position = Vector2(20, -6)
 scale = Vector2(0.5, 0.5)
 
 [node name="RayCastWall" type="RayCast2D" parent="Area2D"]

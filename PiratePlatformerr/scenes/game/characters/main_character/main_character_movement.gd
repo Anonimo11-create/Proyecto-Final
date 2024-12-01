@@ -51,6 +51,7 @@ var _hit_sound = preload("res://assets/sounds/slash.mp3")
 func _ready():
 	_max_jumps =JumpGlobal.jump
 	main_animation.play(_current_movement)
+	Global.jugador = self
 	# Si no hay un personaje, deshabilitamos la función: _physics_process
 	if not character:
 		set_physics_process(false)

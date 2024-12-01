@@ -225,25 +225,25 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_phibb"]
-size = Vector2(31, 25)
+size = Vector2(47, 44)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oc2eb"]
-size = Vector2(33, 27)
+size = Vector2(52, 48)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8v0xk"]
-size = Vector2(189, 30)
+size = Vector2(282, 90)
 
 [node name="AngryPig" type="CharacterBody2D"]
 script = ExtResource("1_tg0dv")
 
 [node name="movility" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -1)
-scale = Vector2(1, 0.933333)
+scale = Vector2(2, 1.866)
 sprite_frames = SubResource("SpriteFrames_tsygn")
 animation = &"Walk"
 
 [node name="CollisionShape" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 0.5)
+position = Vector2(1.5, -1)
 shape = SubResource("RectangleShape2D_phibb")
 
 [node name="IdleTimer" type="Timer" parent="."]
@@ -253,14 +253,14 @@ one_shot = true
 [node name="HitBox" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
-position = Vector2(0.5, 0.5)
+position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_oc2eb")
 debug_color = Color(0.862745, 0.309804, 0.486275, 0.419608)
 
 [node name="Area" type="Area2D" parent="."]
 
 [node name="AreaCollision" type="CollisionShape2D" parent="Area"]
-position = Vector2(4.5, 0)
+position = Vector2(6, -17)
 shape = SubResource("RectangleShape2D_8v0xk")
 debug_color = Color(0.560784, 0.419608, 0.94902, 0.419608)
 
