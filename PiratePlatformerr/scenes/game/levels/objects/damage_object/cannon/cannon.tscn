@@ -110,6 +110,7 @@ position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_ktbri")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(0.385146, 0.476877, 0.504304, 1)
 sprite_frames = SubResource("SpriteFrames_h5nvd")
 animation = &"idle"
 
