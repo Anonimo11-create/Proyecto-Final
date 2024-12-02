@@ -1,0 +1,255 @@
+[gd_scene load_steps=49 format=3 uid="uid://bu4tesiecwtfb"]
+
+[ext_resource type="Script" path="res://scenes/game/levels/objects/AngryPig/angry_Boss.gd" id="1_gpdf4"]
+[ext_resource type="Texture2D" uid="uid://lx1glelhu6n1" path="res://assets/sprites/treasure_hunters/Angry Boss/HIT 1-1/Layer 1_HIT 11.png" id="3_3mffn"]
+[ext_resource type="Texture2D" uid="uid://bv54ksolmjpnd" path="res://assets/sprites/treasure_hunters/Angry Boss/HIT 1-1/Layer 1_HIT 12.png" id="4_xsemn"]
+[ext_resource type="Texture2D" uid="uid://bua0jmhsfxvlv" path="res://assets/sprites/treasure_hunters/Angry Boss/HIT 1-1/Layer 1_HIT 13.png" id="5_nwyww"]
+[ext_resource type="Texture2D" uid="uid://y3nhfvt56o31" path="res://assets/sprites/treasure_hunters/Angry Boss/HIT 2/HITP 20.png" id="8_kh67q"]
+[ext_resource type="Texture2D" uid="uid://mu8btg4cxs6x" path="res://assets/sprites/treasure_hunters/Angry Boss/HIT 2/HITP 21.png" id="9_23xma"]
+[ext_resource type="Texture2D" uid="uid://bdetwyatiu0c8" path="res://assets/sprites/treasure_hunters/Angry Boss/HIT 2/HITP 22.png" id="10_fikfs"]
+[ext_resource type="Texture2D" uid="uid://dcth8ewoei325" path="res://assets/sprites/treasure_hunters/Angry Boss/Idle/Layer 1_IDLE1.png" id="11_5mk8h"]
+[ext_resource type="Texture2D" uid="uid://bi2apn4bmkk13" path="res://assets/sprites/treasure_hunters/Angry Boss/Idle/Layer 1_IDLE2.png" id="12_1d7vt"]
+[ext_resource type="Texture2D" uid="uid://dam74ogfr1owi" path="res://assets/sprites/treasure_hunters/Angry Boss/Idle/Layer 1_IDLE3.png" id="13_r4apw"]
+[ext_resource type="Texture2D" uid="uid://bwad85jofc8lc" path="res://assets/sprites/treasure_hunters/Angry Boss/Idle/Layer 1_IDLE4.png" id="14_hg3ax"]
+[ext_resource type="Texture2D" uid="uid://d3jkk5gas4kjk" path="res://assets/sprites/treasure_hunters/Angry Boss/Idle/Layer 1_IDLE5.png" id="15_crb03"]
+[ext_resource type="Texture2D" uid="uid://bsw2boaljtol1" path="res://assets/sprites/treasure_hunters/Angry Boss/Idle/Layer 1_IDLE6.png" id="16_ujd7o"]
+[ext_resource type="Texture2D" uid="uid://dyh10g7xbmodp" path="res://assets/sprites/treasure_hunters/Angry Boss/Idle/Layer 1_IDLE7.png" id="17_qfpja"]
+[ext_resource type="Texture2D" uid="uid://bq12agt6rx0v7" path="res://assets/sprites/treasure_hunters/Angry Boss/Idle/Layer 1_IDLE8.png" id="18_xuyqn"]
+[ext_resource type="Texture2D" uid="uid://bqmvralx42qas" path="res://assets/sprites/treasure_hunters/Angry Boss/Idle/Layer 1_IDLE9.png" id="19_43btr"]
+[ext_resource type="Texture2D" uid="uid://c30hik2jrdtyq" path="res://assets/sprites/treasure_hunters/Angry Boss/RUNE/Layer 1_RUN01.png" id="20_1vf4s"]
+[ext_resource type="Texture2D" uid="uid://cor7ci7ncdhn8" path="res://assets/sprites/treasure_hunters/Angry Boss/RUNE/Layer 1_RUN02.png" id="21_is17s"]
+[ext_resource type="Texture2D" uid="uid://dcw36yfv68phe" path="res://assets/sprites/treasure_hunters/Angry Boss/RUNE/Layer 1_RUN03.png" id="22_81vpx"]
+[ext_resource type="Texture2D" uid="uid://brno0l0ikamcu" path="res://assets/sprites/treasure_hunters/Angry Boss/RUNE/Layer 1_RUN04.png" id="23_ny8ps"]
+[ext_resource type="Texture2D" uid="uid://c3pygdv7yfgb" path="res://assets/sprites/treasure_hunters/Angry Boss/RUNE/Layer 1_RUN05.png" id="24_m8y2u"]
+[ext_resource type="Texture2D" uid="uid://c0r8r5xc1jt7m" path="res://assets/sprites/treasure_hunters/Angry Boss/RUNE/Layer 1_RUN06.png" id="25_ah4a6"]
+[ext_resource type="Texture2D" uid="uid://773tunf517rs" path="res://assets/sprites/treasure_hunters/Angry Boss/RUNE/Layer 1_RUN07.png" id="26_yf3yi"]
+[ext_resource type="Texture2D" uid="uid://x74w2ifffvp1" path="res://assets/sprites/treasure_hunters/Angry Boss/RUNE/Layer 1_RUN08.png" id="27_u88h8"]
+[ext_resource type="Texture2D" uid="uid://ccfsusgumxnej" path="res://assets/sprites/treasure_hunters/Angry Boss/RUNE/Layer 1_RUN09.png" id="28_e8r7n"]
+[ext_resource type="Texture2D" uid="uid://bgc8dn7ak72ix" path="res://assets/sprites/treasure_hunters/Angry Boss/RUNE/Layer 1_RUN10.png" id="29_cixiq"]
+[ext_resource type="Texture2D" uid="uid://iry62bu43ev8" path="res://assets/sprites/treasure_hunters/Angry Boss/RUNE/Layer 1_RUN11.png" id="30_q5nch"]
+[ext_resource type="Texture2D" uid="uid://d0ie31y1m33bv" path="res://assets/sprites/treasure_hunters/Angry Boss/RUNE/Layer 1_RUN12.png" id="31_axg1x"]
+[ext_resource type="Texture2D" uid="uid://dp8rd7rox5md0" path="res://assets/sprites/treasure_hunters/Angry Boss/walk/WALK00.png" id="32_6n5o8"]
+[ext_resource type="Texture2D" uid="uid://bu1mjjki6qpb7" path="res://assets/sprites/treasure_hunters/Angry Boss/walk/WALK01.png" id="33_uwwpr"]
+[ext_resource type="Texture2D" uid="uid://ctg7q3t7ny3fk" path="res://assets/sprites/treasure_hunters/Angry Boss/walk/WALK02.png" id="34_ssfpn"]
+[ext_resource type="Texture2D" uid="uid://dbuj64nwm7k25" path="res://assets/sprites/treasure_hunters/Angry Boss/walk/WALK03.png" id="35_etkt0"]
+[ext_resource type="Texture2D" uid="uid://bu8ty4m154uy6" path="res://assets/sprites/treasure_hunters/Angry Boss/walk/WALK04.png" id="36_6bbd3"]
+[ext_resource type="Texture2D" uid="uid://c3c48wu3xcap7" path="res://assets/sprites/treasure_hunters/Angry Boss/walk/WALK05.png" id="37_yr4oq"]
+[ext_resource type="Texture2D" uid="uid://xq30051kx2ch" path="res://assets/sprites/treasure_hunters/Angry Boss/walk/WALK06.png" id="38_npdua"]
+[ext_resource type="Texture2D" uid="uid://d2o6g80mr7cc8" path="res://assets/sprites/treasure_hunters/Angry Boss/walk/WALK07.png" id="39_jxvde"]
+[ext_resource type="Texture2D" uid="uid://cq3i2fhft1gkn" path="res://assets/sprites/treasure_hunters/Angry Boss/walk/WALK08.png" id="40_ie38f"]
+[ext_resource type="Texture2D" uid="uid://dgh3el5tenpge" path="res://assets/sprites/treasure_hunters/Angry Boss/walk/WALK09.png" id="41_0y7fs"]
+[ext_resource type="Texture2D" uid="uid://br74eqerheat1" path="res://assets/sprites/treasure_hunters/Angry Boss/walk/WALK10.png" id="42_tc40a"]
+[ext_resource type="Texture2D" uid="uid://yx360cx13yxp" path="res://assets/sprites/treasure_hunters/Angry Boss/walk/WALK11.png" id="43_xs6lf"]
+[ext_resource type="Texture2D" uid="uid://cgb302rpu6scf" path="res://assets/sprites/treasure_hunters/Angry Boss/walk/WALK12.png" id="44_42w4k"]
+[ext_resource type="Texture2D" uid="uid://cdtp18q1ysyus" path="res://assets/sprites/treasure_hunters/Angry Boss/walk/WALK13.png" id="45_v54lq"]
+[ext_resource type="Texture2D" uid="uid://vus2asjlx77w" path="res://assets/sprites/treasure_hunters/Angry Boss/walk/WALK14.png" id="46_n7v3e"]
+[ext_resource type="Texture2D" uid="uid://gjd3tlu81sew" path="res://assets/sprites/treasure_hunters/Angry Boss/walk/WALK15.png" id="47_6uiyr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0hkwj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_3mffn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xsemn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_nwyww")
+}],
+"loop": true,
+"name": &"Hit 1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_kh67q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_23xma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_fikfs")
+}],
+"loop": true,
+"name": &"Hit 2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_5mk8h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_1d7vt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_r4apw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_hg3ax")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_crb03")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ujd7o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_qfpja")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_xuyqn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_43btr")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_1vf4s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_is17s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_81vpx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_ny8ps")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_m8y2u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_ah4a6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_yf3yi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_u88h8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_e8r7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_cixiq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_q5nch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_axg1x")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("32_6n5o8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_uwwpr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_ssfpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_etkt0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_6bbd3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_yr4oq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_npdua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_jxvde")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_ie38f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_0y7fs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_tc40a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_xs6lf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_42w4k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_v54lq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_n7v3e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_6uiyr")
+}],
+"loop": true,
+"name": &"Walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_phibb"]
+size = Vector2(47, 44)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oc2eb"]
+size = Vector2(55, 49)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8v0xk"]
+size = Vector2(282, 90)
+
+[node name="AngryBoss" type="CharacterBody2D"]
+script = ExtResource("1_gpdf4")
+"recibedaño" = true
+
+[node name="movility" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -1)
+scale = Vector2(2, 1.866)
+sprite_frames = SubResource("SpriteFrames_0hkwj")
+animation = &"Walk"
+
+[node name="CollisionShape" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, -1)
+shape = SubResource("RectangleShape2D_phibb")
+
+[node name="IdleTimer" type="Timer" parent="."]
+wait_time = 1.5
+one_shot = true
+
+[node name="HitBox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_oc2eb")
+debug_color = Color(0.862745, 0.309804, 0.486275, 0.419608)
+
+[node name="Area" type="Area2D" parent="."]
+
+[node name="AreaCollision" type="CollisionShape2D" parent="Area"]
+position = Vector2(6, -17)
+shape = SubResource("RectangleShape2D_8v0xk")
+debug_color = Color(0.560784, 0.419608, 0.94902, 0.419608)
+
+[node name="DmgTimer" type="Timer" parent="."]
+wait_time = 0.5
+
+[connection signal="frame_changed" from="movility" to="." method="_on_movility_frame_changed"]
+[connection signal="area_entered" from="HitBox" to="." method="_on_hit_box_area_entered"]
+[connection signal="body_entered" from="HitBox" to="." method="_on_hit_box_body_entered"]
+[connection signal="body_exited" from="HitBox" to="." method="_on_hit_box_body_exited"]
+[connection signal="body_entered" from="Area" to="." method="_on_area_body_entered"]
+[connection signal="body_exited" from="Area" to="." method="_on_area_body_exited"]
+[connection signal="timeout" from="DmgTimer" to="." method="_on_dmg_timer_timeout"]
