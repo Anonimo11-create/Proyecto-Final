@@ -159,20 +159,11 @@ z_index = -1
 position = Vector2(510, 476)
 animation = &"idle_left"
 
-[node name="BackPalmTree2" parent="Objects/BackPalm" instance=ExtResource("7_243vd")]
-z_index = -1
-position = Vector2(320, 221)
-animation = &"idle_left"
-
 [node name="BackPalmTree3" parent="Objects/BackPalm" instance=ExtResource("7_243vd")]
 z_index = -1
 position = Vector2(897, 139)
 
 [node name="FrontPalm" type="Node2D" parent="Objects"]
-
-[node name="FrontPalmTree" parent="Objects/FrontPalm" instance=ExtResource("4_6u8cq")]
-position = Vector2(552.25, 409)
-scale = Vector2(0.987179, 1)
 
 [node name="FrontPalmTree2" parent="Objects/FrontPalm" instance=ExtResource("4_6u8cq")]
 position = Vector2(1104, 321)
@@ -185,9 +176,6 @@ position = Vector2(913, 257)
 
 [node name="FrontPalmTree6" parent="Objects/FrontPalm" instance=ExtResource("4_6u8cq")]
 position = Vector2(615, 138)
-
-[node name="FrontPalmTree5" parent="Objects/FrontPalm" instance=ExtResource("4_6u8cq")]
-position = Vector2(525, 408)
 
 [node name="Chest" type="Sprite2D" parent="Objects"]
 position = Vector2(664, 399)
@@ -235,14 +223,9 @@ texture = SubResource("CompressedTexture2D_dxm3p")
 motion_scale = Vector2(0.6, 0.6)
 motion_mirroring = Vector2(1200, 0)
 
-[node name="BackPalmTree" parent="." instance=ExtResource("7_243vd")]
-z_index = -1
-position = Vector2(526, 297)
-animation = &"idle_left"
-
 [node name="Caverna" type="Sprite2D" parent="."]
 show_behind_parent = true
-position = Vector2(522, 316)
+position = Vector2(535, 316)
 scale = Vector2(1.03631, 1.48025)
 texture = ExtResource("17_4tuk1")
 
