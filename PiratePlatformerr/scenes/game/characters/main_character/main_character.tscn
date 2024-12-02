@@ -372,6 +372,7 @@ animations = [{
 size = Vector2(13, 26)
 
 [node name="MainCharacter" type="CharacterBody2D" groups=["player"]]
+modulate = Color(0.145098, 0.145098, 0.858824, 1)
 disable_mode = 1
 
 [node name="MainCharacterMovement" type="Node2D" parent="." node_paths=PackedStringArray("character", "main_animation", "effect_animation_sword", "audio_player")]
@@ -395,6 +396,7 @@ animation = &"idle_with_sword"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -2.5)
 shape = SubResource("RectangleShape2D_q04ya")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
 [node name="Effects" type="AnimatedSprite2D" parent="."]
 visible = false

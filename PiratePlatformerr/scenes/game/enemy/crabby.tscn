@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://bo37g7mv4j6pn"]
+[gd_scene load_steps=55 format=3 uid="uid://bo37g7mv4j6pn"]
 
 [ext_resource type="Texture2D" uid="uid://cdtttj4kphx77" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_00.png" id="1_etpdb"]
 [ext_resource type="Texture2D" uid="uid://b1rf5b6id5j4n" path="res://scenes/game/enemy/isra-maraver-monster-006/sprite_01.png" id="2_oeux0"]
@@ -54,27 +54,21 @@ script/source = "extends CharacterBody2D
 
 var direction = -1
 var SPEED = 1000
-
+var life:int = 2
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting(\"physics/2d/default_gravity\")
-
-
-
-
+var is_dead = false
 
 
 
 func _physics_process(delta):
 	# Add the gravity.
-	print(direction)
 	velocity.y += gravity * delta
-
 	# Handle jump.
-
-
+	if is_dead:
+		return
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-
 	
 	velocity.x = direction * SPEED * delta 
 	
@@ -83,13 +77,26 @@ func _physics_process(delta):
 	elif $Area2D/RayCastWall2.is_colliding() and direction == 1:
 		direction = -1
 	
-	
 	if not $Area2D/RayCastTerrain.is_colliding() and direction == -1:
 		direction = 1
+		$EnemyAnimation.flip_h = true
 	elif not $Area2D/RayCastTerrain2.is_colliding() and direction == 1:
 		direction = -1
+		$EnemyAnimation.flip_h = false
 	
 	move_and_slide()
+
+func _process(delta):
+	if is_dead:
+		return
+	#if life == 1 and not is_dead:
+		#$EnemyAnimation.play(\"dead_ground\")
+		#is_dead = true
+	#elif life <=0:
+		#$EnemyAnimation.play(\"dead_hit\")
+		#SPEED = 0
+		#if $EnemyAnimation.get_animation() == \"Dead_hit\" and $EnemyAnimation.frame == 4:
+			#queue_free()  
 
 
 func _ready():
@@ -98,6 +105,13 @@ func _ready():
 func _on_enemy_animation_animation_finished():
 	if $EnemyAnimation.animation == \"attack\":
 		$EnemyAnimation.play(\"run\")
+	elif $EnemyAnimation.animation == \"dead_ground\":
+		life -=1
+		if life > 0:
+			is_dead = false
+			$EnemyAnimation.play(\"run\")
+	elif $EnemyAnimation.animation == \"dead_hit\":
+		queue_free()
 
 
 func _on_area_2d_body_entered(body):
@@ -114,6 +128,20 @@ func _on_enemy_animation_frame_changed():
 	if $EnemyAnimation.animation == \"attack\":
 		if $EnemyAnimation.frame == 2:
 			Global.jugador.hit(2)
+	#if $EnemyAnimation.get_animation() == \"Dead_hit\" and $movility.frame == 4:
+		#queue_free()       #eliminar enemigo de la scena
+
+
+func _on_hitboxx_area_entered(area):
+	if area.is_in_group(\"hit\"):
+		if !is_dead:
+			life -= 1
+			if life > 0:
+				is_dead = true
+				$EnemyAnimation.play(\"dead_ground\")
+			else:
+				is_dead = true
+				$EnemyAnimation.play(\"dead_hit\")
 "
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fq7gh"]
@@ -332,7 +360,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ku5hj"]
-size = Vector2(32, 23)
+size = Vector2(41, 25)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6nhye"]
 animations = [{
@@ -360,19 +388,21 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_62ixa"]
-size = Vector2(52, 31)
+size = Vector2(51, 29)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_weqip"]
+size = Vector2(43, 26)
 
 [node name="Crabby" type="CharacterBody2D"]
 script = SubResource("GDScript_6chrj")
 
 [node name="EnemyAnimation" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, 1.90735e-06)
 scale = Vector2(0.14875, 0.145625)
 sprite_frames = SubResource("SpriteFrames_fq7gh")
-animation = &"attack"
+animation = &"dead_hit"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -0.5)
+position = Vector2(-0.5, 2.5)
 shape = SubResource("RectangleShape2D_ku5hj")
 
 [node name="EnemyEffect" type="AnimatedSprite2D" parent="."]
@@ -382,7 +412,7 @@ animation = &"idle"
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0, -0.5)
+position = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_62ixa")
 one_way_collision_margin = 0.0
 
@@ -417,8 +447,16 @@ target_position = Vector2(300, 0)
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 bus = &"Effects"
 
+[node name="Hitboxx" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitboxx"]
+position = Vector2(-0.5, 3)
+shape = SubResource("RectangleShape2D_weqip")
+debug_color = Color(0.92549, 0, 0.67451, 0.419608)
+
 [connection signal="animation_finished" from="EnemyAnimation" to="." method="_on_enemy_animation_animation_finished"]
 [connection signal="frame_changed" from="EnemyAnimation" to="." method="_on_enemy_animation_frame_changed"]
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="area_entered" from="Hitboxx" to="." method="_on_hitboxx_area_entered"]

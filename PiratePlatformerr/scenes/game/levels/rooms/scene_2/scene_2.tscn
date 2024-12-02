@@ -250,13 +250,14 @@ texture = ExtResource("17_4tuk1")
 position = Vector2(221, 373)
 
 [node name="Crabby2" parent="." instance=ExtResource("4_cmc0y")]
-position = Vector2(14, 241)
+position = Vector2(146, 305)
 
 [node name="Crabby3" parent="." instance=ExtResource("4_cmc0y")]
 position = Vector2(349, 402)
 
 [node name="AngryPig3" parent="." instance=ExtResource("18_7d7ki")]
-position = Vector2(943, 560)
+position = Vector2(872, 548)
+"recibedaño" = true
 
 [node name="JumpPotion" parent="." instance=ExtResource("19_xjvk7")]
 position = Vector2(85, 433)
