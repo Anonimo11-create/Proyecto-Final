@@ -37,7 +37,7 @@ bus = &"Ambient"
 
 [node name="MainCharacter" parent="." instance=ExtResource("1_vi0ax")]
 z_index = 2
-position = Vector2(725, 564)
+position = Vector2(19, 219)
 
 [node name="Camera2D" parent="." node_paths=PackedStringArray("character") instance=ExtResource("2_2f152")]
 position = Vector2(324, 395)
@@ -231,7 +231,7 @@ motion_mirroring = Vector2(1200, 0)
 [node name="Caverna" type="Sprite2D" parent="."]
 show_behind_parent = true
 visibility_layer = 269
-position = Vector2(535, 316)
+position = Vector2(537, 296)
 scale = Vector2(1.03631, 1.48025)
 texture = ExtResource("17_4tuk1")
 

@@ -110,7 +110,6 @@ animations = [{
 }]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xlum2"]
-load_path = "res://.godot/imported/text.png-c60f3c71437097c445e5745800ab64ed.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u0nh0"]
 atlas = SubResource("CompressedTexture2D_xlum2")
@@ -156,7 +155,6 @@ region = Rect2(24, 104, 10, 11)
 default_font_size = 24
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_q3nub"]
-load_path = "res://.godot/imported/text.png-c60f3c71437097c445e5745800ab64ed.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_roilr"]
 atlas = SubResource("CompressedTexture2D_q3nub")
@@ -1232,10 +1230,10 @@ libraries = {
 }
 
 [node name="Parallax2" type="AnimationPlayer" parent="Main/ParallaxBackground"]
-speed_scale = 0.5
 libraries = {
 "": SubResource("AnimationLibrary_hyuae")
 }
+speed_scale = 0.5
 
 [connection signal="pressed" from="Main/CanvasLayer/Options/Init/Button/Button" to="." method="_on_button_pressed"]
 [connection signal="toggled" from="Main/CanvasLayer/Options/Fullscreen/CheckButton" to="." method="_on_check_button_toggled"]

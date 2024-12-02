@@ -18,7 +18,6 @@ atlas = ExtResource("7_kitrq")
 region = Rect2(104, 4, 10, 11)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_iwcxu"]
-load_path = "res://.godot/imported/text.png-c60f3c71437097c445e5745800ab64ed.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nallr"]
 atlas = SubResource("CompressedTexture2D_iwcxu")

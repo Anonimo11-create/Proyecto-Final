@@ -208,7 +208,7 @@ position = Vector2(1197, 454)
 [node name="Bosque" type="Sprite2D" parent="."]
 show_behind_parent = true
 z_index = -2
-position = Vector2(817, 320)
+position = Vector2(779, -201)
 scale = Vector2(2.34, 1.84483)
 texture = ExtResource("19_kes7d")
 
